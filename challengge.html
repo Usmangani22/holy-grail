@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            padding: 5%;
+            font-size: 16px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            border: 5px solid green;
+            width: 310px;
+            height: 310px;
+            /* justify-items: stretch;
+            align-items: stretch; */
+            
+        }
+        .gd-1{
+            color: white;
+            background-color: bisque;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .gd-2{
+            color: white;
+            background-color: aqua;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .gd-3{
+            color: white;
+            background-color: blueviolet;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .grid-item{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-item gd-1">1</div>
+        <div class="grid-item gd-2">2</div>
+        <div class="grid-item gd-3">3</div>
+    </div>
+</body>
+</html>
